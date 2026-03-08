@@ -45,7 +45,7 @@ public class SportCategoryTest extends BaseTest {
     @Test
     public void getSportCategories(){
         String token = TokenHelper.getToken();
-        // --location 'https://sport-reservation-api-bootcamp.do.dibimbing.id/api/v1/sport-categories?is_paginate=false&per_page=&page='
+ 
         Response response = RestAssured.given()
                 .header("Authorization","Bearer " + token)
                 .header("Content-Type","application/json")
@@ -68,7 +68,6 @@ public class SportCategoryTest extends BaseTest {
     @Test
     public void updateSportCategory(){
         String token = TokenHelper.getToken();
-        //{{baseURL}}/api/v1/sport-categories/update/{{category_id}}
 
         String updatedName = "testing day 15";
 
